@@ -1,43 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A1 Layout Implementation - Nguyen Minh Nam</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Import Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montez&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Import Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
-        @theme {
-            --color-blue: hsl(191, 75%, 45%);
-            --color-light-blue: hsl(190, 61%, 94%);
-            --color-white: hsl(0, 0%, 100%);
-            --color-dark-blue: hsl(193, 64%, 18%);
-            --color-text: hsl(60, 6%, 5%);
-            --color-subtext: hsl(180, 1%, 44%);
+      @theme {
+        --color-blue: hsl(191, 75%, 45%);
+        --color-light-blue: hsl(190, 61%, 94%);
+        --color-white: hsl(0, 0%, 100%);
+        --color-dark-blue: hsl(193, 64%, 18%);
+        --color-text: hsl(60, 6%, 5%);
+        --color-subtext: hsl(180, 1%, 44%);
+        --color-border-line: hsl(0, 0%, 60%);
 
-            --container-width: 100%;
-            --container-max-width: 1344px;
-            --container-padding: 72px;
-        }
+        --container-width: 100%;
+        --container-max-width: 1344px;
+        --container-padding: 72px;
+
+        --font-inter: "Inter", sans-serif;
+        --font-manrope: "Manrope", sans-serif;
+        --font-montez: "Montez", cursive;
+      }
     </style>
-    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-</head>
 
-<body>
+    <!-- Import Boxicons CDN -->
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
     <!-- Header -->
     <header>
-        
+      <div class="px-[72px] h-[47px] flex items-center justify-between">
+        <div class="text-sm text-text flex h-full items-center font-medium">
+          <address class="flex items-center not-italic">
+            <i class="bx bx-location text-[16px] pr-[8px]"></i>
+            <span class="font-inter">45 New Eskaton Road, Austria</span>
+          </address>
+          <div
+            class="w-[1px] h-[14px] bg-border-line ml-[25.64px] mr-[19px]"
+          ></div>
+          <div class="flex items-center">
+            <i class="bx bx-clock-4 text-[16px] pr-[8px]"></i>
+            <span>Sun to Friday: 8.00 am - 7.00 pm, Austria</span>
+          </div>
+        </div>
+        <div class="flex items-center text-sm">
+          <a
+            href="javascript:void(0)"
+            class="flex items-center border-[1px] border-[#E1E4E5] px-[8px] py-[4px] rounded-[100px] mr-[24px]"
+            >Language <i class="bx bx-caret-down"></i>
+          </a>
+          <a href="#">Faq</a>
+          <div
+            class="w-[1px] h-[14px] bg-border-line ml-[16.01px] mr-[15.5px]"
+          ></div>
+          <a href="#">Support</a>
+          <div
+            class="w-[1px] h-[14px] bg-border-line ml-[15.09px] mr-[15.5px]"
+          ></div>
+          <a href="javascript:void(0)" class="flex items-center"
+            >Sign in/ Register <i class="bx bx-chevron-down"></i>
+          </a>
+        </div>
+      </div>
+      <div class="h-[92px] border-t-1 border-[#E1E4E5] flex justify-between">
+        <div class="flex">
+          <figure
+            class="h-full w-[364.8px] relative bg-[url('./assets/images/shape_logo.png')] bg-cover bg-center"
+          >
+            <img
+              src="./assets/images/logo.png"
+              alt="LOGO"
+              class="w-[197px] h-[56px] absolute top-[24px] left-[72px]"
+            />
+          </figure>
+
+          <nav class="h-full">
+            <ul
+              class="flex items-center gap-[46px] h-full w-full text-[16px] font-inter"
+            >
+              <li>
+                <a href="javascript:void(0)" class="flex items-center"
+                  >Home <i class="bx bx-chevron-down text-text font-bold"></i
+                ></a>
+              </li>
+              <li><a href="javascript:void(0)">About Us</a></li>
+              <li>
+                <a href="javascript:void(0)" class="flex items-center"
+                  >Destinations <i class="bx bx-chevron-down text-text"></i
+                ></a>
+              </li>
+              <li><a href="javascript:void(0)">Services</a></li>
+              <li>
+                <a href="javascript:void(0)" class="flex items-center"
+                  >Trip <i class="bx bx-chevron-down text-text"></i
+                ></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="flex items-center"
+                  >Page <i class="bx bx-chevron-down text-text"></i
+                ></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="flex items-center"
+                  >Blog <i class="bx bx-chevron-down text-text"></i
+                ></a>
+              </li>
+              <li><a href="javascript:void(0)">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex items-center pr-[72px]">
+          <a
+            href="javascript:void(0)"
+            class="flex items-center bg-dark-blue px-[35px] py-[18px] rounded-[48px] text-white"
+            >Request A Quote
+            <img
+              src="./assets/images/arrow_right.png"
+              alt="ARROW"
+              class="w-[24px] h-[24px] ml-[7.41px]"
+          /></a>
+        </div>
+      </div>
     </header>
 
     <!-- Main -->
-    <main>
-        
-    </main>
+    <main></main>
 
     <!-- Footer -->
-    <footer>
-        
-    </footer>
-</body>
-
+    <footer></footer>
+  </body>
 </html>

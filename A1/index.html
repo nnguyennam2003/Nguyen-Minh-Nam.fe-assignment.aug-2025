@@ -2,25 +2,25 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A1 Layout Implementation - Nguyen Minh Nam</title>
-    <!-- Import Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet" />
-    <!-- Import Tailwind CSS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-        @theme {
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A1 Layout Implementation - Nguyen Minh Nam</title>
+  <!-- Import Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet" />
+  <!-- Import Tailwind CSS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
         --color-blue: hsl(191, 75%, 45%);
         --color-light-blue: hsl(190, 61%, 94%);
         --color-white: hsl(0, 0%, 100%);
@@ -32,351 +32,583 @@
         --font-inter: "Inter", sans-serif;
         --font-manrope: "Manrope", sans-serif;
         --font-montez: "Montez", cursive;
-        }
+      }
     </style>
-    <!-- Import Swiper CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- Import Boxicons CDN -->
-    <link href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/style-custom.css">
+  <!-- Import Swiper CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Import Boxicons CDN -->
+  <link href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css" rel="stylesheet" />
+  <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./css/style-custom.css" />
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="w-full z-9999">
-        <div class="px-[72px] h-[47px] flex items-center justify-between">
-            <div class="text-sm text-text flex h-full items-center font-medium font-inter">
-                <address class="flex items-center not-italic">
-                    <i class="bx bx-location text-[16px] pr-[8px]"></i>
-                    <span>45 New Eskaton Road, Austria</span>
-                </address>
-                <div class="w-[1px] h-[14px] bg-border-line ml-[25.64px] mr-[19px]"></div>
-                <div class="flex items-center">
-                    <i class="bx bx-clock-4 text-[16px] pr-[8px]"></i>
-                    <span>Sun to Friday: 8.00 am - 7.00 pm, Austria</span>
-                </div>
-            </div>
-            <div class="flex items-center text-sm font-inter">
-                <a href="javascript:void(0)"
-                    class="flex items-center border-[1px] border-[#E1E4E5] px-[8px] py-[4px] rounded-[100px] mr-[24px]">Language
-                    <i class="bx bx-caret-down"></i>
-                </a>
-                <a href="#">Faq</a>
-                <div class="w-[1px] h-[14px] bg-border-line ml-[16.01px] mr-[15.5px]"></div>
-                <a href="#">Support</a>
-                <div class="w-[1px] h-[14px] bg-border-line ml-[15.09px] mr-[15.5px]"></div>
-                <a href="javascript:void(0)" class="flex items-center">Sign in/ Register <i
-                        class="bx bx-chevron-down"></i>
-                </a>
-            </div>
+  <!-- Header -->
+  <header class="w-full z-9999">
+    <div class="px-[72px] h-[47px] flex items-center justify-between">
+      <div class="text-sm text-text flex h-full items-center font-medium font-inter">
+        <address class="flex items-center not-italic">
+          <i class="bx bx-location text-[16px] pr-[8px]"></i>
+          <span>45 New Eskaton Road, Austria</span>
+        </address>
+        <div class="w-[1px] h-[14px] bg-border-line ml-[25.64px] mr-[19px]"></div>
+        <div class="flex items-center">
+          <i class="bx bx-clock-4 text-[16px] pr-[8px]"></i>
+          <span>Sun to Friday: 8.00 am - 7.00 pm, Austria</span>
         </div>
-        <div class="w-"></div>
-        <div class="h-[92px] border-t-1 border-[#E1E4E5] flex justify-between">
-            <div class="flex">
-                <figure
-                    class="h-full w-[364.8px] relative bg-[url('./assets/images/shape_logo.png')] bg-cover bg-center">
-                    <img src="./assets/images/logo.png" alt="LOGO"
-                        class="w-[197px] h-[56px] absolute top-[24px] left-[72px]" />
-                </figure>
+      </div>
+      <div class="flex items-center text-sm font-inter">
+        <a href="javascript:void(0)"
+          class="flex items-center border-[1px] border-[#E1E4E5] px-[8px] py-[4px] rounded-[100px] mr-[24px]">Language
+          <i class="bx bx-caret-down"></i>
+        </a>
+        <a href="#">Faq</a>
+        <div class="w-[1px] h-[14px] bg-border-line ml-[16.01px] mr-[15.5px]"></div>
+        <a href="#">Support</a>
+        <div class="w-[1px] h-[14px] bg-border-line ml-[15.09px] mr-[15.5px]"></div>
+        <a href="javascript:void(0)" class="flex items-center">Sign in/ Register <i class="bx bx-chevron-down"></i>
+        </a>
+      </div>
+    </div>
+    <div class="w-"></div>
+    <div class="h-[92px] border-t-1 border-[#E1E4E5] flex justify-between">
+      <div class="flex">
+        <figure class="h-full w-[364.8px] relative bg-[url('./assets/images/shape_logo.png')] bg-cover bg-center">
+          <img src="./assets/images/logo.png" alt="LOGO" class="w-[197px] h-[56px] absolute top-[24px] left-[72px]" />
+        </figure>
 
-                <nav class="h-full">
-                    <ul class="flex items-center gap-[46px] h-full w-full text-[16px] font-inter">
-                        <li>
-                            <a href="javascript:void(0)" class="flex items-center">Home <i
-                                    class="bx bx-chevron-down text-text font-bold"></i></a>
-                        </li>
-                        <li><a href="javascript:void(0)">About Us</a></li>
-                        <li>
-                            <a href="javascript:void(0)" class="flex items-center">Destinations <i
-                                    class="bx bx-chevron-down text-text"></i></a>
-                        </li>
-                        <li><a href="javascript:void(0)">Services</a></li>
-                        <li>
-                            <a href="javascript:void(0)" class="flex items-center">Trip <i
-                                    class="bx bx-chevron-down text-text"></i></a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)" class="flex items-center">Page <i
-                                    class="bx bx-chevron-down text-text"></i></a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)" class="flex items-center">Blog <i
-                                    class="bx bx-chevron-down text-text"></i></a>
-                        </li>
-                        <li><a href="javascript:void(0)">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="flex items-center pr-[72px]">
-                <a href="javascript:void(0)"
-                    class="flex items-center bg-dark-blue px-[35px] py-[18px] rounded-[48px] text-white font-inter">
-                    Request A Quote
-                    <img src="./assets/images/arrow_right.png" alt="ARROW" class="w-[24px] h-[24px] ml-[7.41px]" />
-                </a>
-            </div>
+        <nav class="h-full">
+          <ul class="flex items-center gap-[46px] h-full w-full text-[16px] font-inter">
+            <li>
+              <a href="javascript:void(0)" class="flex items-center">Home <i
+                  class="bx bx-chevron-down text-text font-bold"></i></a>
+            </li>
+            <li><a href="javascript:void(0)">About Us</a></li>
+            <li>
+              <a href="javascript:void(0)" class="flex items-center">Destinations <i
+                  class="bx bx-chevron-down text-text"></i></a>
+            </li>
+            <li><a href="javascript:void(0)">Services</a></li>
+            <li>
+              <a href="javascript:void(0)" class="flex items-center">Trip <i
+                  class="bx bx-chevron-down text-text"></i></a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="flex items-center">Page <i
+                  class="bx bx-chevron-down text-text"></i></a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="flex items-center">Blog <i
+                  class="bx bx-chevron-down text-text"></i></a>
+            </li>
+            <li><a href="javascript:void(0)">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="flex items-center pr-[72px]">
+        <a href="javascript:void(0)"
+          class="flex items-center bg-dark-blue px-[35px] py-[18px] rounded-[48px] text-white font-inter hover:bg-blue duration-200">
+          Request A Quote
+          <img src="./assets/icons/arrow_right.png" alt="ARROW" class="w-[24px] h-[24px] ml-[7.41px]" />
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Hero -->
+    <section class="h-[805.38px] w-full relative z-0">
+      <div
+        class="swiper heroSwiper w-full h-full relative after:content-[''] after:bg-black/50 after:absolute after:top-0 after:left-0 after:w-full after:h-full after:z-10 after:pointer-events-none">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/images/hero1.png" alt="HERO_IMAGE" class="w-full h-full object-cover" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/hero2.png" alt="HERO_IMAGE" class="w-full h-full object-cover" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/hero1.png" alt="HERO_IMAGE" class="w-full h-full object-cover" />
+          </div>
         </div>
-    </header>
 
-    <!-- Main -->
-    <main>
-        <!-- Hero -->
-        <section class="h-[805.38px] w-full relative z-0">
+        <!-- Navigation -->
+        <div class="flex flex-col absolute top-[50%] right-[73px] z-20 gap-4">
+          <button
+            class="custom-prev absolute top-[-140px] right-0 w-[64px] h-[64px] bg-white/15 backdrop-blur-[5px] flex items-center justify-center rounded-full active:scale-90 cursor-pointer">
+            <img src="./assets/icons/arrow_right.png" alt="prev" class="w-[24px] h-[24px] transform -rotate-90" />
+          </button>
+          <div class="swiper-pagination mr-[23.5px]"></div>
+          <button
+            class="custom-next absolute bottom-[-140px] right-0 w-[64px] h-[64px] bg-white/15 backdrop-blur-[5px] flex items-center justify-center rounded-full active:scale-90 cursor-pointer">
+            <img src="./assets/icons/arrow_right.png" alt="next" class="w-[24px] h-[24px] transform rotate-90" />
+          </button>
+        </div>
+      </div>
+
+      <div class="absolute top-[47%] left-[300px] translate-y-[-50%] z-20 text-white">
+        <p class="text-[40px]/[40px] font-montez">
+          Get unforgetable pleasure with us
+        </p>
+        <h1 class="text-[80px]/[94.4px] font-manrope w-[674.4px] font-bold">
+          Explore beauty of the whole world
+        </h1>
+        <div class="flex gap-[16px] mt-[46px]">
+          <a href="javascript:void(0)"
+            class="flex items-center bg-transparent border-1 px-[35px] py-[21.8px] rounded-[48px] text-white font-inter hover:bg-blue duration-200 hover:border-blue">Explore Tours
+            <img src="./assets/icons/arrow_right.png" alt="ARROW" class="w-[24px] h-[24px] ml-[7.64px]" /></a>
+          <a href="javascript:void(0)"
+            class="flex items-center bg-transparent border-1 px-[35px] py-[21.8px] rounded-[48px] text-white font-inter hover:bg-blue duration-200 hover:border-blue">Our
+            Services
+            <img src="./assets/icons/arrow_right.png" alt="ARROW" class="w-[24px] h-[24px] ml-[7.64px]" /></a>
+        </div>
+      </div>
+
+      <div
+        class="w-[1320px] h-[110px] absolute left-[50%] translate-x-[-50%] bottom-[-46px] z-30 bg-white rounded-[16px] border-[2px] border-blue">
+        <form class="flex items-center justify-between h-full px-[34px] font-inter" action="javascript:void(0)">
+          <!-- Select -->
+          <div class="w-[247px] flex items-center pr-[24.42px] border-r-[1px] border-[#E1E4E5] font-inter">
+            <div class="h-full flex justify-center items-center w-[20ppx] z-10">
+              <i class="bx bx-location text-[24px] text-blue"></i>
+            </div>
+            <select class="flex-1 pl-[8px] text-gray-700">
+              <option value="" class="text-gray-400">Destination</option>
+            </select>
+          </div>
+          <div class="w-[247px] flex items-center pr-[24.42px] border-r-[1px] border-[#E1E4E5]">
+            <div class="h-full flex justify-center items-center w-[20ppx] z-10">
+              <i class="bx bx-cycling text-[24px] text-blue"></i>
+            </div>
+            <select class="flex-1 pl-[8px] text-gray-700">
+              <option value="" class="text-gray-400">Activity</option>
+            </select>
+          </div>
+          <div class="w-[247px] flex items-center pr-[24.42px] border-r-[1px] border-[#E1E4E5]">
+            <div class="h-full flex justify-center items-center w-[20ppx] z-10">
+              <i class="bx bx-clock-4 text-[24px] text-blue"></i>
+            </div>
+            <select class="flex-1 pl-[8px] text-gray-700">
+              <option value="" class="text-gray-400">0 Days - 6 Days</option>
+            </select>
+          </div>
+          <div class="w-[247px] flex items-center pr-[24.42px] border-r-[1px] border-[#E1E4E5]">
+            <div class="h-full flex justify-center items-center w-[20ppx] z-10">
+              <i class="bx bx-dollar-circle text-[24px] text-blue"></i>
+            </div>
+            <select class="flex-1 pl-[8px] text-gray-700">
+              <option value="" class="text-gray-400">$200 - $580</option>
+            </select>
+          </div>
+
+          <!-- Search Button -->
+          <button type="submit"
+            class="bg-blue font-inter text-white px-[52px] py-[18px] rounded-[48px] font-medium text-[16px] hover:bg-dark-blue duration-200 cursor-pointer">
+            Search
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="h-[887px] bg-[url('./assets/images/categories.png')] bg-cover bg-center pt-[165.19px]">
+      <p class="text-center font-montez text-[40px]/[40px] text-dark-blue">
+        Wornderful Place For You
+      </p>
+      <h2 class="text-center font-manrope font-bold text-[48px]/[63.7px] text-dark-blue">
+        Tour Categories
+      </h2>
+
+      <ul class="flex w-[1774px] mx-auto mt-[46.68px] justify-between">
+        <li
+          class="max-w-[306.8px] w-full flex flex-col items-center translate-y-[51.49px] translate-x-[24.55px] rotate-[-7.09deg]">
+          <figure class="w-full h-[305.82px] rounded-[24px]">
+            <img src="./assets/images/category_1.jpg.png" alt="CATEGORY_IMAGE" class="rounded-[24px]" />
+          </figure>
+          <div class="mt-[14.32px]">
+            <h3 class="text-[24px] text-dark-blue text-center font-semibold font-manrope">
+              Wildlife
+            </h3>
+            <p class="text-[14px] text-subtext text-center font-inter font-semibold">
+              See More
+            </p>
+          </div>
+        </li>
+        <li
+          class="max-w-[306.8px] w-full flex flex-col items-center translate-y-[8.49px] translate-x-[10.55px] rotate-[-3.55deg]">
+          <figure class="w-full h-[305.82px] rounded-[24px]">
+            <img src="./assets/images/category_2.jpg.png" alt="CATEGORY_IMAGE" class="rounded-[24px]" />
+          </figure>
+          <div class="mt-[14.32px]">
+            <h3 class="text-[24px] text-dark-blue text-center font-semibold font-manrope">
+              Walking
+            </h3>
+            <p class="text-[14px] text-subtext text-center font-inter font-semibold">
+              See More
+            </p>
+          </div>
+        </li>
+        <li class="max-w-[306.8px] w-full flex flex-col items-center">
+          <figure class="w-full h-[305.82px] rounded-[24px]">
+            <img src="./assets/images/category_3.jpg.png" alt="CATEGORY_IMAGE" class="rounded-[24px]" />
+          </figure>
+          <div class="mt-[14.32px]">
+            <h3 class="text-[24px] text-dark-blue text-center font-semibold font-manrope">
+              Cruises
+            </h3>
+            <p class="text-[14px] text-subtext text-center font-inter font-semibold">
+              See More
+            </p>
+          </div>
+        </li>
+        <li
+          class="max-w-[306.8px] w-full flex flex-col items-center translate-y-[8.49px] translate-x-[-10.55px] rotate-[3.55deg]">
+          <figure class="w-full h-[305.82px] rounded-[24px]">
+            <img src="./assets/images/category_4.jpg.png" alt="CATEGORY_IMAGE" class="rounded-[24px]" />
+          </figure>
+          <div class="mt-[14.32px]">
+            <h3 class="text-[24px] text-dark-blue text-center font-semibold font-manrope">
+              Hiking
+            </h3>
+            <p class="text-[14px] text-subtext text-center font-inter font-semibold">
+              See More
+            </p>
+          </div>
+        </li>
+        <li
+          class="max-w-[306.8px] w-full flex flex-col items-center translate-y-[51.49px] translate-x-[-24.55px] rotate-[7.09deg]">
+          <figure class="w-full h-[305.82px] rounded-[24px]">
+            <img src="./assets/images/category_5.jpg.png" alt="CATEGORY_IMAGE" class="rounded-[24px]" />
+          </figure>
+          <div class="mt-[14.32px]">
+            <h3 class="text-[24px] text-dark-blue text-center font-semibold font-manrope">
+              Airbirds
+            </h3>
+            <p class="text-[14px] text-subtext text-center font-inter font-semibold">
+              See More
+            </p>
+          </div>
+        </li>
+      </ul>
+      <ul class="flex items-center mx-auto justify-center mt-[46.68px] gap-[30px]">
+        <li
+          class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
+        </li>
+        <li
+          class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
+        </li>
+        <li
+          class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
+        </li>
+        <li
+          class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
+        </li>
+        <li
+          class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
+        </li>
+      </ul>
+    </section>
+
+    <!-- Popular -->
+    <section class="w-full h-[904.69px]">
+      <div class="text-center mb-[44.81px]">
+        <p class="text-[40px]/[40px] text-dark-blue font-montez">Top Destination</p>
+        <h2 class="text-[48px]/[63.7px] text-dark-blue font-manrope font-bold">Popular Destination</h2>
+      </div>
+
+      <div class="flex justify-center max-w-[1344px] w-full mx-auto">
+        <div class="w-[432px] h-[636px] bg-red-400 rounded-[24px]">
+          
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Plan Your Trip  -->
+    <section
+      class="w-full relative z-10 pb-[117.12px] before:content-[''] before:z-0 before:absolute before:w-[396px] before:h-[396px] before:bg-[#E9F6F9] before:rounded-full before:right-[76.58px] before:bottom-[92.94px] after:content-[''] after:bg-[url('./assets/images/plan_man.png')] after:bg-cover after:bg-center after:z-10 after:absolute after:w-[217px] after:h-[546px] after:bottom-0 after:right-[153.59px]">
+      <div class="max-w-[1322px] w-full mx-auto flex gap-[56px]">
+        <div class="flex gap-[24px]">
+          <figure class="min-w-[312px] flex-1 h-[630px]">
+            <img src="./assets/images/about_1.jpg.png" alt="PLAN_IMAGE"
+              class="w-full rounded-[156px_156px_0px_156px]" />
+          </figure>
+          <figure class="min-w-[312px] flex-1 h-[650px] flex justify-between flex-col">
+            <img src="./assets/images/about_2.jpg.png" alt="PLAN_IMAGE"
+              class="w-full rounded-[156px_156px_156px_0px]" />
+            <img src="./assets/images/about_3.jpg.png" alt="PLAN_IMAGE"
+              class="w-full rounded-[156px_0px_156px_156px]" />
+          </figure>
+        </div>
+
+        <div class="pr-[118.71px]">
+          <p class="font-montez text-[40px]/[40px] text-dark-blue">
+            Let’s Go Together
+          </p>
+          <h2 class="font-manrope font-bold text-[48px]/[63.7px] text-dark-blue">
+            Plan Your Trip <br />
+            With us
+          </h2>
+
+          <p class="font-inter text-[18px]/[26px] text-subtext mt-[24.24px]">
+            There are many variations of passages of available but the
+            majority have suffered alteration in some form, by injected hum
+            randomised words which don’t look even slightly.
+          </p>
+          <div class="flex flex-col gap-[20px] mt-[32.25px]">
+            <div class="flex gap-[16px] items-center">
+              <figure class="w-[72px] h-[72px]">
+                <img src="./assets/icons/plan_map.png" alt="PLAN_IMAGE" class="w-full" />
+              </figure>
+              <div class="w-full max-w-[293.64px] flex flex-col gap-[6px]">
+                <h3 class="font-manrope font-semibold text-[24px]/[34px] text-dark-blue">
+                  Exclusive Trip
+                </h3>
+                <p class="font-inter text-[16px]/[28px] text-subtext">
+                  There are many variations of passages of available but the
+                  majority.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-[16px] items-center">
+              <figure class="w-[72px] h-[72px]">
+                <img src="./assets/icons/plan_guide.png" alt="PLAN_IMAGE" class="w-full" />
+              </figure>
+              <div class="w-full max-w-[293.64px] flex flex-col gap-[6px]">
+                <h3 class="font-manrope font-semibold text-[24px]/[34px] text-dark-blue">
+                  Professional Guide
+                </h3>
+                <p class="font-inter text-[16px]/[28px] text-subtext">
+                  There are many variations of passages of available but the
+                  majority.
+                </p>
+              </div>
+            </div>
+          </div>
+          <a href="javascript:void(0)"
+            class="px-[35px] w-fit bg-dark-blue flex items-center py-[20px] rounded-[48px] text-white font-inter mt-[35px] hover:bg-blue duration-200">
+            Learn More
+            <img src="./assets/icons/arrow_right.png" alt="ARROW" class="w-[24px] h-[24px] ml-[7.41px]" />
+          </a>
+        </div>
+      </div>
+      <img src="./assets/icons/shape_air_balloon.png" alt="SHAPE_PLAN"
+        class="absolute left-[57.59px] top-[130px] w-[56px] h-[78px]" />
+      <img src="./assets/icons/shape_air_balloon.png" alt="SHAPE_PLAN"
+        class="absolute left-[153.59px] top-[91px] w-[35px] h-[47px]" />
+      <img src="./assets/icons/shape_air_balloon.png" alt="SHAPE_PLAN"
+        class="absolute left-[38.39px] top-[82.12px] w-[15px] h-[21px]" />
+    </section>
+
+    <!-- Recommend -->
+    <section class="pt-[120px] pb-[114px] bg-[url('./assets/images/bg_recommend.png')] bg-cover bg-center">
+      <div class="text-center text-dark-blue">
+        <p class="font-montez text-[40px]/[40px]">Best Recommended Places</p>
+        <h2 class="font-manrope font-bold text-[48px]/[63.7px] mb-[21.68px]">
+          Popular Destination we offer for all
+        </h2>
+        <p class="font-inter text-[18px]/[31.5px] w-[687px] mx-auto">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+
+      <div class="swiper recommendSwiper max-w-[1322px] w-full mx-auto mt-[59px]">
+        <div class="swiper-wrapper flex justify-between" id="recommendWrapper"></div>
+      </div>
+      <ul class="custom-pagination-recommend flex items-center justify-center gap-[30px] mt-[60.01px]"></ul>
+    </section>
+
+    <!-- Gallery -->
+    <section
+      class="relative before:absolute before:content-[''] before:w-[177px] before:h-[111px] before:bg-[url('./assets/images/shape_coconut.png')] before:bg-cover before:bg-center before:bottom-0 before:left-[57.59px] before:z-10 after:absolute after:content-[''] after:w-[52px] after:h-[60px] after:bg-[url('./assets/images/shape_anchor.png')] after:bg-cover after:bg-center after:bottom-[640.16px] after:right-[96px] after:z-10">
+      <div
+        class="bg-[url('./assets/images/bg_gallery.png')] bg-cover bg-position-[100%_60%] mb-[146px] relative before:absolute before:content-[''] before:w-[85px] before:h-[52px] before:bg-[url('./assets/images/shape_plane.png')] before:bg-cover before:bg-center before:top-[181.15px] before:left-[55.68px] before:z-10">
+        <div class="text-center">
+          <p class="text-[40px]/[40px] text-dark-blue font-montez">
+            Make Your Tour More Pleasure
+          </p>
+          <h2 class="font-manrope font-bold text-[48px]/[59.7px] text-dark-blue">
+            Recent Gallery
+          </h2>
+        </div>
+        <figure
+          class="mt-[48.68px] grid grid-cols-[281.83px_281.83px_281.83px_281.83px_281.83px] grid-rows-[218.09px_218.09px] gap-[17px] justify-center ">
+          <div class="col-start-1 col-end-2 row-start-1 row-end-3 flex items-center">
+            <img src="./assets/images/gallery_1.jpg" alt="GALLERY"
+              class="w-[281.83px] h-[264.34px] rounded-[24px]"></img>
+          </div>
+          <div class="col-start-2 col-end-3 row-start-1 row-end-2 rounded-[24px]">
+            <img src="./assets/images/gallery_2.jpg" alt="GALLERY" class="w-full h-full rounded-[24px]">
+          </div>
+          <div class="col-start-2 col-end-3 row-start-2 row-end-3 rounded-[24px]">
+            <img src="./assets/images/gallery_3.jpg" alt="GALLERY" class="w-full h-full rounded-[24px]">
+          </div>
+          <div class="col-start-3 col-end-4 row-start-1 row-end-3 h-full rounded-[24px]">
+            <img src="./assets/images/gallery_4.jpg" alt="GALLERY" class="w-full h-full rounded-[24px]">
+          </div>
+          <div class="col-start-4 col-end-5 row-start-1 row-end-2 rounded-[24px]">
+            <img src="./assets/images/gallery_5.jpg" alt="GALLERY" class="w-full h-full rounded-[24px]">
+          </div>
+          <div class="col-start-4 col-end-5 row-start-2 row-end-3 rounded-[24px]">
+            <img src="./assets/images/gallery_6.jpg" alt="GALLERY" class="w-full h-full rounded-[24px]">
+          </div>
+          <div class="col-start-5 col-end-6 row-start-1 row-end-3 flex items-center rounded-[24px]">
+            <img src="./assets/images/gallery_7.jpg" alt="GALLERY"
+              class="w-[281.83px] h-[264.34px] rounded-[24px]"></img>
+          </div>
+        </figure>
+      </div>
+
+      <div class="w-full max-w-[1320px] h-[591px] mx-auto flex gap-[24px]">
+        <div class="h-full w-[calc(100%-48px)]">
+          <div
+            class="w-full h-[312px] mt-[158px] rounded-full border-[1px] border-blue p-[24px] relative after:content-[''] after:absolute after:bg-[url('./assets/images/rate_dot.png')] after:bg-contain after:bg-no-repeat after:w-[24px] after:h-[24px] after:bottom-[54px] after:right-[15px]">
             <div
-                class="swiper heroSwiper w-full h-full relative after:content-[''] after:bg-black/50 after:absolute after:top-0 after:left-0 after:w-full after:h-full after:z-10 after:pointer-events-none">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./assets/images/hero1.png" alt="HERO_IMAGE" class="w-full h-full object-cover">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/images/hero2.png" alt="HERO_IMAGE" class="w-full h-full object-cover">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/images/hero1.png" alt="HERO_IMAGE" class="w-full h-full object-cover">
-                    </div>
-                </div>
-
-                <!-- Navigation -->
-                <div class="flex flex-col absolute top-[50%] right-[73px] z-20 gap-4">
-                    <button
-                        class="custom-prev absolute top-[-140px] right-0 w-[64px] h-[64px] bg-white/15 backdrop-blur-[5px] flex items-center justify-center rounded-full">
-                        <img src="./assets/images/arrow_right.png" alt="prev"
-                            class="w-[24px] h-[24px] transform -rotate-90">
-                    </button>
-                    <div class="swiper-pagination mr-[23.5px]"></div>
-                    <button
-                        class="custom-next absolute bottom-[-140px] right-0 w-[64px] h-[64px] bg-white/15 backdrop-blur-[5px] flex items-center justify-center rounded-full">
-                        <img src="./assets/images/arrow_right.png" alt="next"
-                            class="w-[24px] h-[24px] transform rotate-90">
-                    </button>
-                </div>
+              class="w-full h-full bg-light-blue rounded-full text-center flex flex-col justify-center items-center gap-[7px] pt-[10px]">
+              <h3 class="font-manrope font-bold text-[48px]/[48px] text-text">12</h3>
+              <p class="font-manrope font-medium text-[24px]/[36px] text-text">Years Experience</p>
             </div>
-
-            <div class="absolute top-[47%] left-[300px] translate-y-[-50%] z-20 text-white">
-                <p class="text-[40px]/[40px] font-montez">Get unforgetable pleasure with us</p>
-                <h1 class="text-[80px]/[94.4px] font-manrope w-[674.4px] font-bold">Explore beauty of the whole world
-                </h1>
-                <div class="flex gap-[16px] mt-[46px]">
-                    <a href="javascript:void(0)"
-                        class="flex items-center bg-blue px-[35px] py-[21.8px] rounded-[48px] text-white font-inter">Explore
-                        Tours <img src="./assets/images/arrow_right.png" alt="ARROW"
-                            class="w-[24px] h-[24px] ml-[7.64px]"></a>
-                    <a href="javascript:void(0)"
-                        class="flex items-center bg-transparent border-1 px-[35px] py-[21.8px] rounded-[48px] text-white font-inter">Our
-                        Services <img src="./assets/images/arrow_right.png" alt="ARROW"
-                            class="w-[24px] h-[24px] ml-[7.64px]"></a>
-                </div>
-            </div>
-
+          </div>
+        </div>
+        <div class="h-full w-[calc(100%-48px)]">
+          <div
+            class="w-full h-[312px] rounded-full border-[1px] border-blue p-[24px] relative after:content-[''] after:absolute after:bg-[url('./assets/images/rate_dot.png')] after:bg-contain after:bg-no-repeat after:w-[24px] after:h-[24px] after:top-[25px] after:right-[43px]">
             <div
-                class="w-[1320px] h-[110px] absolute left-[50%] translate-x-[-50%] bottom-[-46px] z-30 bg-white rounded-[16px] border-[2px] border-blue ">
-                <form class="flex items-center justify-between h-full px-[34px] font-inter" action="javascript:void(0)">
-                    <!-- Select -->
-                    <div class="w-[247px] flex items-center pr-[24.42px] border-r-[1px] border-[#E1E4E5] font-inter">
-                        <div class="h-full flex justify-center items-center w-[20ppx] z-10">
-                            <i class='bx  bx-location text-[24px] text-blue'></i>
-                        </div>
-                        <select class="flex-1 pl-[8px] text-gray-700">
-                            <option value="" class="text-gray-400">Destination</option>
-                        </select>
-                    </div>
-                    <div class="w-[247px] flex items-center pr-[24.42px] border-r-[1px] border-[#E1E4E5]">
-                        <div class="h-full flex justify-center items-center w-[20ppx] z-10">
-                            <i class='bx  bx-cycling text-[24px] text-blue'></i>
-                        </div>
-                        <select class="flex-1 pl-[8px] text-gray-700">
-                            <option value="" class="text-gray-400">Activity</option>
-                        </select>
-                    </div>
-                    <div class="w-[247px] flex items-center pr-[24.42px] border-r-[1px] border-[#E1E4E5]">
-                        <div class="h-full flex justify-center items-center w-[20ppx] z-10">
-                            <i class='bx  bx-clock-4 text-[24px] text-blue'></i>
-                        </div>
-                        <select class="flex-1 pl-[8px] text-gray-700">
-                            <option value="" class="text-gray-400">0 Days - 6 Days</option>
-                        </select>
-                    </div>
-                    <div class="w-[247px] flex items-center pr-[24.42px] border-r-[1px] border-[#E1E4E5]">
-                        <div class="h-full flex justify-center items-center w-[20ppx] z-10">
-                            <i class='bx  bx-dollar-circle text-[24px] text-blue'></i>
-                        </div>
-                        <select class="flex-1 pl-[8px] text-gray-700">
-                            <option value="" class="text-gray-400">$200 - $580</option>
-                        </select>
-                    </div>
-
-                    <!-- Search Button -->
-                    <button type="submit"
-                        class="bg-blue font-inter text-white px-[52px] py-[18px] rounded-[48px] font-medium text-[16px]">
-                        Search
-                    </button>
-                </form>
+              class="w-full h-full bg-light-blue rounded-full text-center flex flex-col justify-center items-center gap-[7px] pt-[10px]">
+              <h3 class="font-manrope font-bold text-[48px]/[48px] text-text">97%</h3>
+              <p class="font-manrope font-medium text-[24px]/[36px] text-text">Retention Rate</p>
             </div>
-        </section>
-
-        <!-- Categories -->
-        <section class="h-[887px] bg-[url('./assets/images/categories.png')] bg-cover bg-center pt-[165.19px]">
-            <p class="text-center font-montez text-[40px]/[40px] text-dark-blue">Wornderful Place For You</p>
-            <h2 class="text-center font-manrope font-bold text-[48px]/[63.7px] text-dark-blue">Tour Categories</h2>
-
-            <ul class="flex w-[1774px] mx-auto mt-[46.68px] justify-between">
-                <li
-                    class="max-w-[306.8px] w-full flex flex-col items-center translate-y-[51.49px] translate-x-[24.55px] rotate-[-7.09deg]">
-                    <figure class="w-full h-[305.82px] rounded-[24px]">
-                        <img src="./assets/images/category_1.jpg.png" alt="CATEGORY_IMAGE" class="rounded-[24px]">
-                    </figure>
-                    <div class="mt-[14.32px]">
-                        <h3 class="text-[24px] text-dark-blue text-center font-semibold font-manrope">Wildlife</h3>
-                        <p class="text-[14px] text-subtext text-center font-inter font-semibold">See More</p>
-                    </div>
-                </li>
-                <li
-                    class="max-w-[306.8px] w-full flex flex-col items-center translate-y-[8.49px] translate-x-[10.55px] rotate-[-3.55deg]">
-                    <figure class="w-full h-[305.82px] rounded-[24px]">
-                        <img src="./assets/images/category_2.jpg.png" alt="CATEGORY_IMAGE" class="rounded-[24px]">
-                    </figure>
-                    <div class="mt-[14.32px]">
-                        <h3 class="text-[24px] text-dark-blue text-center font-semibold font-manrope">Walking</h3>
-                        <p class="text-[14px] text-subtext text-center font-inter font-semibold">See More</p>
-                    </div>
-                </li>
-                <li class="max-w-[306.8px] w-full flex flex-col items-center">
-                    <figure class="w-full h-[305.82px] rounded-[24px]">
-                        <img src="./assets/images/category_3.jpg.png" alt="CATEGORY_IMAGE" class="rounded-[24px]">
-                    </figure>
-                    <div class="mt-[14.32px]">
-                        <h3 class="text-[24px] text-dark-blue text-center font-semibold font-manrope">Cruises</h3>
-                        <p class="text-[14px] text-subtext text-center font-inter font-semibold">See More</p>
-                    </div>
-                </li>
-                <li
-                    class="max-w-[306.8px] w-full flex flex-col items-center translate-y-[8.49px] translate-x-[-10.55px] rotate-[3.55deg]">
-                    <figure class="w-full h-[305.82px] rounded-[24px]">
-                        <img src="./assets/images/category_4.jpg.png" alt="CATEGORY_IMAGE" class="rounded-[24px]">
-                    </figure>
-                    <div class="mt-[14.32px]">
-                        <h3 class="text-[24px] text-dark-blue text-center font-semibold font-manrope">Hiking</h3>
-                        <p class="text-[14px] text-subtext text-center font-inter font-semibold">See More</p>
-                    </div>
-                </li>
-                <li
-                    class="max-w-[306.8px] w-full flex flex-col items-center translate-y-[51.49px] translate-x-[-24.55px] rotate-[7.09deg]">
-                    <figure class="w-full h-[305.82px] rounded-[24px]">
-                        <img src="./assets/images/category_5.jpg.png" alt="CATEGORY_IMAGE" class="rounded-[24px]">
-                    </figure>
-                    <div class="mt-[14.32px]">
-                        <h3 class="text-[24px] text-dark-blue text-center font-semibold font-manrope">Airbirds</h3>
-                        <p class="text-[14px] text-subtext text-center font-inter font-semibold">See More</p>
-                    </div>
-                </li>
-            </ul>
-            <ul class="flex items-center mx-auto justify-center mt-[46.68px] gap-[30px]">
-                <li
-                    class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
-                </li>
-                <li
-                    class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
-                </li>
-                <li
-                    class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
-                </li>
-                <li
-                    class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
-                </li>
-                <li
-                    class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
-                </li>
-            </ul>
-        </section>
-
-        <!-- Popular -->
-        <section class="w-full h-[904.69px]"></section>
-
-        <!-- Plan Your Trip  -->
-        <section class="w-full relative">
-            <div class="max-w-[1322px] w-full mx-auto flex gap-[56px]">
-                <div class="flex gap-[24px]">
-                    <figure class="min-w-[312px] flex-1 h-[630px]">
-                        <img src="./assets/images/about_1.jpg.png" alt="PLAN_IMAGE"
-                            class="w-full rounded-[156px_156px_0px_156px]">
-                    </figure>
-                    <figure class="min-w-[312px] flex-1 h-[650px] flex justify-between flex-col">
-                        <img src="./assets/images/about_2.jpg.png" alt="PLAN_IMAGE"
-                            class="w-full rounded-[156px_156px_156px_0px]">
-                        <img src="./assets/images/about_3.jpg.png" alt="PLAN_IMAGE"
-                            class="w-full rounded-[156px_0px_156px_156px]">
-                    </figure>
-                </div>
-
-                <div class="pr-[118.71px]">
-                    <p class="font-montez text-[40px]/[40px] text-dark-blue">Let’s Go Together</p>
-                    <h2 class="font-manrope font-bold text-[48px]/[63.7px] text-dark-blue">Plan Your Trip <br /> With us
-                    </h2>
-
-                    <p class="font-inter text-[18px]/[26px] text-subtext mt-[24.24px]">There are many variations of
-                        passages of available but the
-                        majority have suffered alteration in some form, by injected
-                        hum randomised words which don’t look even slightly.
-                    </p>
-                    <div class="flex flex-col gap-[20px] mt-[32.25px]">
-                        <div class="flex gap-[16px] items-center">
-                            <figure class="w-[72px] h-[72px]">
-                                <img src="./assets/images/plan_map.png" alt="PLAN_IMAGE" class="w-full">
-                            </figure>
-                            <div class="w-full max-w-[293.64px] flex flex-col gap-[6px]">
-                                <h3 class="font-manrope font-semibold text-[24px]/[34px] text-dark-blue">Exclusive Trip
-                                </h3>
-                                <p class="font-inter text-[16px]/[28px] text-subtext">There are many variations of
-                                    passages
-                                    of available but the majority.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-[16px] items-center">
-                            <figure class="w-[72px] h-[72px]">
-                                <img src="./assets/images/plan_guide.png" alt="PLAN_IMAGE" class="w-full">
-                            </figure>
-                            <div class="w-full max-w-[293.64px] flex flex-col gap-[6px]">
-                                <h3 class="font-manrope font-semibold text-[24px]/[34px] text-dark-blue">Professional
-                                    Guide</h3>
-                                <p class="font-inter text-[16px]/[28px] text-subtext">There are many variations of
-                                    passages
-                                    of available but the majority.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="javascript:void(0)"
-                        class="px-[35px] w-fit bg-dark-blue flex items-center py-[20px] rounded-[48px] text-white font-inter mt-[35px]">
-                        Learn More
-                        <img src="./assets/images/arrow_right.png" alt="ARROW" class="w-[24px] h-[24px] ml-[7.41px]">
-                    </a>
-                </div>
+          </div>
+        </div>
+        <div class="h-full w-[calc(100%-48px)]">
+          <div
+            class="w-full h-[312px] mt-[158px] rounded-full border-[1px] border-blue p-[24px] relative after:content-[''] after:absolute after:bg-[url('./assets/images/rate_dot.png')] after:bg-contain after:bg-no-repeat after:w-[24px] after:h-[24px] after:bottom-[54px] after:right-[15px]">
+            <div
+              class="w-full h-full bg-light-blue rounded-full text-center flex flex-col justify-center items-center gap-[7px] pt-[10px]">
+              <h3 class="font-manrope font-bold text-[48px]/[48px] text-text">8k</h3>
+              <p class="font-manrope font-medium text-[24px]/[36px] text-text">Tour Completed</p>
             </div>
-        </section>
-    </main>
+          </div>
+        </div>
+        <div class="h-full w-[calc(100%-48px)]">
+          <div
+            class="w-full h-[312px] rounded-full border-[1px] border-blue p-[24px] relative after:content-[''] after:absolute after:bg-[url('./assets/images/rate_dot.png')] after:bg-contain after:bg-no-repeat after:w-[24px] after:h-[24px] after:top-[25px] after:right-[43px]">
+            <div
+              class="w-full h-full bg-light-blue rounded-full text-center flex flex-col justify-center items-center gap-[7px] pt-[10px]">
+              <h3 class="font-manrope font-bold text-[48px]/[48px] text-text">19k</h3>
+              <p class="font-manrope font-medium text-[24px]/[36px] text-text">Happy Travellers</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- Footer -->
-    <footer></footer>
+      <img src="./assets/icons/shape_air_balloon.png" alt="SHAPE_PLAN"
+        class="absolute left-[57.59px] top-[751.13px] w-[56px] h-[78px]" />
+      <img src="./assets/icons/shape_air_balloon.png" alt="SHAPE_PLAN"
+        class="absolute left-[153.59px] top-[706.33px] w-[35px] h-[47px]" />
+      <img src="./assets/icons/shape_air_balloon.png" alt="SHAPE_PLAN"
+        class="absolute left-[38.39px] top-[696.3px] w-[15px] h-[21px]" />
+    </section>
 
+    <!-- Tour Guide -->
+    <section class="pt-[120px] pb-[114px] w-full bg-[url('./assets/images/bg_tour_guide.png')] bg-cover bg-center">
+      <div class="text-center mb-[49px]">
+        <p class="font-montez text-[40px]/[40px] text-dark-blue">Meet with Guide</p>
+        <h2 class="font-manrope font-bold text-[48px]/[63.7px] text-dark-blue">Tour Guide</h2>
+      </div>
 
-    <!-- Swiper CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".heroSwiper", {
-            direction: "vertical",
-            allowTouchMove: false,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-                renderBullet: function (index, className) {
-                    return '<span class="' + className + '"></span>';
-                },
-            },
-            navigation: {
-                nextEl: ".custom-next",
-                prevEl: ".custom-prev",
-            },
-            loop: true
-        });
-    </script>
+      <div class="swiper tourSwiper max-w-[1320px] mx-auto ">
+        <div class="swiper-wrapper w-full flex justify-between" id="tourWrapper"></div>
+      </div>
+      <ul class="custom-pagination-tour flex items-center justify-center gap-[30px] mt-[65px]"></ul>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="pt-[120px] bg-[url('./assets/images/bg_testimonial.png')] bg-cover bg-center pb-[114px]">
+      <div class="text-center">
+        <p class="font-montez text-[40px]/[40px] text-dark-blue">Testimonial</p>
+        <h2 class="font-manrope font-bold text-[48px]/[63.7px] text-dark-blue">What Client Say About us</h2>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+
+  <!-- Swiper CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".heroSwiper", {
+      direction: "vertical",
+      allowTouchMove: false,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '"></span>';
+        },
+      },
+      navigation: {
+        nextEl: ".custom-next",
+        prevEl: ".custom-prev",
+      },
+      loop: true,
+    });
+
+    var swiper = new Swiper(".popularSwiper", {
+      effect: 'coverflow',
+      grabCursor: true,
+      // centeredSlides: true,
+      slidesPerView: 5,
+      loop: true,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2.5,
+      },
+    });
+
+    var swiper = new Swiper(".recommendSwiper", {
+      slidesPerView: 4,
+      spaceBetween: 24,
+      pagination: {
+        el: ".custom-pagination-recommend",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return `<li class="${className} bullet_recommend" style="margin: 0;"></li>`;
+        },
+      },
+    });
+
+    var swiper = new Swiper(".tourSwiper", {
+      slidesPerView: 4,
+      spaceBetween: 24,
+      pagination: {
+        el: ".custom-pagination-tour",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return `<li class="${className} bullet_tour" style="margin: 0;"></li>`;
+        },
+      },
+    });
+
+    // var swiper = new Swiper(".testimonialSwiper", {
+    //   slidesPerView: 3,
+    //   spaceBetween: 30,
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    //   },
+    // });
+  </script>
+  <script src="./data/data.js"></script>
 </body>
 
 </html>

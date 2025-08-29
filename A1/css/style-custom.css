@@ -1,4 +1,4 @@
-.swiper-pagination-bullet {
+.heroSwiper .swiper-pagination-bullet {
   width: 2px;
   height: 20px;
   background: #ffffff;
@@ -7,7 +7,22 @@
   transition: all 0.3s;
   margin: 20px 0 !important;
 }
-.swiper-pagination-bullet-active {
+.heroSwiper .swiper-pagination-bullet-active {
   background: #1ca8cb;
   opacity: 1;
+}
+
+
+.bullet_recommend,
+.bullet_tour {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #0A2A66;
+  cursor: pointer;
+  transition: all 0.1s ease;
 }

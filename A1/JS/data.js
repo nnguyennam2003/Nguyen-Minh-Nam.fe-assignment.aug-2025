@@ -105,7 +105,7 @@ const guides = [
     name: "Jacob Jones",
     role: "Tourist Guide",
     socials: ["facebook", "twitter", "instagram", "youtube"],
-  }
+  },
 ];
 
 const socialIcons = {
@@ -140,7 +140,7 @@ recommendWarper.innerHTML = recommends
             <i class="bx bx-clock-4"></i> ${item.days} Days
           </span>
           <a href="javascript:void(0)"
-            class="flex items-center px-[20.5px] py-[14px] border-[1px] border-[#E1E4E5] rounded-[48px] text-[16px]/[26px] text-dark-blue font-inter gap-[7.68px]">
+            class="flex items-center px-[20.5px] py-[14px] border-[1px] border-[#E1E4E5] rounded-[48px] text-[16px]/[26px] text-dark-blue font-inter gap-[7.68px] hover:bg-blue hover:border-blue duration-200 hover:text-white">
             Book Now
             <img src="./assets/icons/arrow_right_dark.png" alt="ARROW" class="w-[24px] h-[24px]" />
           </a>

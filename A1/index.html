@@ -156,7 +156,8 @@
         </h1>
         <div class="flex gap-[16px] mt-[46px]">
           <a href="javascript:void(0)"
-            class="flex items-center bg-transparent border-1 px-[35px] py-[21.8px] rounded-[48px] text-white font-inter hover:bg-blue duration-200 hover:border-blue">Explore Tours
+            class="flex items-center bg-transparent border-1 px-[35px] py-[21.8px] rounded-[48px] text-white font-inter hover:bg-blue duration-200 hover:border-blue">Explore
+            Tours
             <img src="./assets/icons/arrow_right.png" alt="ARROW" class="w-[24px] h-[24px] ml-[7.64px]" /></a>
           <a href="javascript:void(0)"
             class="flex items-center bg-transparent border-1 px-[35px] py-[21.8px] rounded-[48px] text-white font-inter hover:bg-blue duration-200 hover:border-blue">Our
@@ -317,17 +318,76 @@
         <h2 class="text-[48px]/[63.7px] text-dark-blue font-manrope font-bold">Popular Destination</h2>
       </div>
 
-      <div class="flex justify-center max-w-[1344px] w-full mx-auto">
-        <div class="w-[432px] h-[636px] bg-red-400 rounded-[24px]">
-          
+      <div class="mx-auto w-full max-w-[1344px]">
+        <div class="swiper popularSwiper w-full">
+          <div class="swiper-wrapper ml-[38px]" id="popularWrapper">
+            <div
+              class="swiper-slide !w-[432px] !h-[636px] bg-[url('./assets/images/popular_1.png')] bg-cover rounded-[24px] p-[40px]">
+              <div class="flex w-full h-full justify-between items-end">
+                <div>
+                  <h3 class="text-[24px]/[34px] font-manrope font-semibold text-white">Island</h3>
+                  <p class="text-[16px]/[26px] font-inter text-white mt-[4px]">22 Listing</p>
+                </div>
+                <a href="javascript:void(0)"
+                  class="flex items-center px-[35px] py-[15.5px] text-[16px]/[26px] font-inter text-white border-[1px] rounded-[48px]">View
+                  All <img src="./assets/icons/arrow_right.png" alt="ARROW" class="w-[16px] h-[16px] ml-[7.61px]"></a>
+              </div>
+            </div>
+            <div
+              class="swiper-slide !w-[432px] !h-[636px] bg-[url('./assets/images/popular_2.png')] bg-cover rounded-[24px] p-[40px]">
+              <div class="flex w-full h-full justify-between items-end">
+                <div>
+                  <h3 class="text-[24px]/[34px] font-manrope font-semibold text-white">Nepal</h3>
+                  <p class="text-[16px]/[26px] font-inter text-white mt-[4px]">22 Listing</p>
+                </div>
+                <a href="javascript:void(0)"
+                  class="flex items-center px-[35px] py-[15.5px] text-[16px]/[26px] font-inter text-white border-[1px] rounded-[48px]">View
+                  All <img src="./assets/icons/arrow_right.png" alt="ARROW" class="w-[16px] h-[16px] ml-[7.61px]"></a>
+              </div>
+            </div>
+            <div
+              class="swiper-slide !w-[432px] !h-[636px] bg-[url('./assets/images/popular_3.png')] bg-cover rounded-[24px] p-[40px]">
+              <div class="flex w-full h-full justify-between items-end">
+                <div>
+                  <h3 class="text-[24px]/[34px] font-manrope font-semibold text-white">Thailand</h3>
+                  <p class="text-[16px]/[26px] font-inter text-white mt-[4px]">22 Listing</p>
+                </div>
+                <a href="javascript:void(0)"
+                  class="flex items-center px-[35px] py-[15.5px] text-[16px]/[26px] font-inter text-white border-[1px] rounded-[48px]">View
+                  All <img src="./assets/icons/arrow_right.png" alt="ARROW" class="w-[16px] h-[16px] ml-[7.61px]"></a>
+              </div>
+            </div>
+            <div
+              class="swiper-slide !w-[432px] !h-[636px] bg-[url('./assets/images/popular_4.png')] bg-cover rounded-[24px] p-[40px]">
+              <div class="flex w-full h-full justify-between items-end">
+                <div>
+                  <h3 class="text-[24px]/[34px] font-manrope font-semibold text-white">Maldives</h3>
+                  <p class="text-[16px]/[26px] font-inter text-white mt-[4px]">22 Listing</p>
+                </div>
+                <a href="javascript:void(0)"
+                  class="flex items-center px-[35px] py-[15.5px] text-[16px]/[26px] font-inter text-white border-[1px] rounded-[48px]">View
+                  All <img src="./assets/icons/arrow_right.png" alt="ARROW" class="w-[16px] h-[16px] ml-[7.61px]"></a>
+              </div>
+            </div>
+            <div
+              class="swiper-slide !w-[432px] !h-[636px] bg-[url('./assets/images/popular_5.png')] bg-cover rounded-[24px] p-[40px]">
+              <div class="flex w-full h-full justify-between items-end">
+                <div>
+                  <h3 class="text-[24px]/[34px] font-manrope font-semibold text-white">Belgium</h3>
+                  <p class="text-[16px]/[26px] font-inter text-white mt-[4px]">22 Listing</p>
+                </div>
+                <a href="javascript:void(0)"
+                  class="flex items-center px-[35px] py-[15.5px] text-[16px]/[26px] font-inter text-white border-[1px] rounded-[48px]">View
+                  All <img src="./assets/icons/arrow_right.png" alt="ARROW" class="w-[16px] h-[16px] ml-[7.61px]"></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
     </section>
 
     <!-- Plan Your Trip  -->
-    <section
-      class="w-full relative z-10 pb-[117.12px] before:content-[''] before:z-0 before:absolute before:w-[396px] before:h-[396px] before:bg-[#E9F6F9] before:rounded-full before:right-[76.58px] before:bottom-[92.94px] after:content-[''] after:bg-[url('./assets/images/plan_man.png')] after:bg-cover after:bg-center after:z-10 after:absolute after:w-[217px] after:h-[546px] after:bottom-0 after:right-[153.59px]">
+    <section class="w-full relative z-10 pb-[117.12px] before:content-[''] before:z-0 before:absolute before:w-[396px] before:h-[396px] before:bg-[#E9F6F9] before:rounded-full before:right-[76.58px] before:bottom-[92.94px] after:content-[''] after:bg-[url('./assets/images/plan_man.png')] after:bg-cover after:bg-center after:z-10 after:absolute after:w-[217px] after:h-[546px] after:bottom-0 after:right-[153.59px]">
       <div class="max-w-[1322px] w-full mx-auto flex gap-[56px]">
         <div class="flex gap-[24px]">
           <figure class="min-w-[312px] flex-1 h-[630px]">
@@ -421,8 +481,7 @@
     </section>
 
     <!-- Gallery -->
-    <section
-      class="relative before:absolute before:content-[''] before:w-[177px] before:h-[111px] before:bg-[url('./assets/images/shape_coconut.png')] before:bg-cover before:bg-center before:bottom-0 before:left-[57.59px] before:z-10 after:absolute after:content-[''] after:w-[52px] after:h-[60px] after:bg-[url('./assets/images/shape_anchor.png')] after:bg-cover after:bg-center after:bottom-[640.16px] after:right-[96px] after:z-10">
+    <section class="relative before:absolute before:content-[''] before:w-[177px] before:h-[111px] before:bg-[url('./assets/images/shape_coconut.png')] before:bg-cover before:bg-center before:bottom-0 before:left-[57.59px] before:z-10 after:absolute after:content-[''] after:w-[52px] after:h-[60px] after:bg-[url('./assets/images/shape_anchor.png')] after:bg-cover after:bg-center after:bottom-[640.16px] after:right-[96px] after:z-10">
       <div
         class="bg-[url('./assets/images/bg_gallery.png')] bg-cover bg-position-[100%_60%] mb-[146px] relative before:absolute before:content-[''] before:w-[85px] before:h-[52px] before:bg-[url('./assets/images/shape_plane.png')] before:bg-cover before:bg-center before:top-[181.15px] before:left-[55.68px] before:z-10">
         <div class="text-center">
@@ -464,7 +523,7 @@
       <div class="w-full max-w-[1320px] h-[591px] mx-auto flex gap-[24px]">
         <div class="h-full w-[calc(100%-48px)]">
           <div
-            class="w-full h-[312px] mt-[158px] rounded-full border-[1px] border-blue p-[24px] relative after:content-[''] after:absolute after:bg-[url('./assets/images/rate_dot.png')] after:bg-contain after:bg-no-repeat after:w-[24px] after:h-[24px] after:bottom-[54px] after:right-[15px]">
+            class="w-full h-[312px] mt-[158px] rounded-full border-[1px] border-blue p-[24px] relative after:content-[''] after:absolute after:bg-[url('./assets/icons/rate_dot.png')] after:bg-contain after:bg-no-repeat after:w-[24px] after:h-[24px] after:bottom-[54px] after:right-[15px]">
             <div
               class="w-full h-full bg-light-blue rounded-full text-center flex flex-col justify-center items-center gap-[7px] pt-[10px]">
               <h3 class="font-manrope font-bold text-[48px]/[48px] text-text">12</h3>
@@ -474,7 +533,7 @@
         </div>
         <div class="h-full w-[calc(100%-48px)]">
           <div
-            class="w-full h-[312px] rounded-full border-[1px] border-blue p-[24px] relative after:content-[''] after:absolute after:bg-[url('./assets/images/rate_dot.png')] after:bg-contain after:bg-no-repeat after:w-[24px] after:h-[24px] after:top-[25px] after:right-[43px]">
+            class="w-full h-[312px] rounded-full border-[1px] border-blue p-[24px] relative after:content-[''] after:absolute after:bg-[url('./assets/icons/rate_dot.png')] after:bg-contain after:bg-no-repeat after:w-[24px] after:h-[24px] after:top-[25px] after:right-[43px]">
             <div
               class="w-full h-full bg-light-blue rounded-full text-center flex flex-col justify-center items-center gap-[7px] pt-[10px]">
               <h3 class="font-manrope font-bold text-[48px]/[48px] text-text">97%</h3>
@@ -484,7 +543,7 @@
         </div>
         <div class="h-full w-[calc(100%-48px)]">
           <div
-            class="w-full h-[312px] mt-[158px] rounded-full border-[1px] border-blue p-[24px] relative after:content-[''] after:absolute after:bg-[url('./assets/images/rate_dot.png')] after:bg-contain after:bg-no-repeat after:w-[24px] after:h-[24px] after:bottom-[54px] after:right-[15px]">
+            class="w-full h-[312px] mt-[158px] rounded-full border-[1px] border-blue p-[24px] relative after:content-[''] after:absolute after:bg-[url('./assets/icons/rate_dot.png')] after:bg-contain after:bg-no-repeat after:w-[24px] after:h-[24px] after:bottom-[54px] after:right-[15px]">
             <div
               class="w-full h-full bg-light-blue rounded-full text-center flex flex-col justify-center items-center gap-[7px] pt-[10px]">
               <h3 class="font-manrope font-bold text-[48px]/[48px] text-text">8k</h3>
@@ -494,7 +553,7 @@
         </div>
         <div class="h-full w-[calc(100%-48px)]">
           <div
-            class="w-full h-[312px] rounded-full border-[1px] border-blue p-[24px] relative after:content-[''] after:absolute after:bg-[url('./assets/images/rate_dot.png')] after:bg-contain after:bg-no-repeat after:w-[24px] after:h-[24px] after:top-[25px] after:right-[43px]">
+            class="w-full h-[312px] rounded-full border-[1px] border-blue p-[24px] relative after:content-[''] after:absolute after:bg-[url('./assets/icons/rate_dot.png')] after:bg-contain after:bg-no-repeat after:w-[24px] after:h-[24px] after:top-[25px] after:right-[43px]">
             <div
               class="w-full h-full bg-light-blue rounded-full text-center flex flex-col justify-center items-center gap-[7px] pt-[10px]">
               <h3 class="font-manrope font-bold text-[48px]/[48px] text-text">19k</h3>
@@ -526,89 +585,340 @@
     </section>
 
     <!-- Testimonial -->
-    <section class="pt-[120px] bg-[url('./assets/images/bg_testimonial.png')] bg-cover bg-center pb-[114px]">
-      <div class="text-center">
-        <p class="font-montez text-[40px]/[40px] text-dark-blue">Testimonial</p>
-        <h2 class="font-manrope font-bold text-[48px]/[63.7px] text-dark-blue">What Client Say About us</h2>
+    <section class="pt-[120px] pb-[120px] relative">
+      <div class="bg-[url('./assets/images/bg_testimonial.png')] bg-cover bg-center pb-[139px]">
+        <div class="text-center mb-[82.08px]">
+          <p class="font-montez text-[40px]/[40px] text-dark-blue">Testimonial</p>
+          <h2 class="font-manrope font-bold text-[48px]/[63.7px] text-dark-blue">What Client Say About us</h2>
+        </div>
+        <div class="overflow-hidden ">
+          <div class="relative flex gap-[44px] left-[-9px]">
+            <div class="min-w-[616px] max-w-[616px] p-[40px] pb-[59.2px] bg-light-blue rounded-[24px] h-fit mt-[98px]">
+              <div class="flex gap-[16px] mb-[20px]">
+                <figure class="w-[77px] h-[76px] rounded-full">
+                  <img src="./assets/images/testi_ava_1.png" alt="AVA" class="w-full h-full rounded-full">
+                </figure>
+                <div class="flex-1">
+                  <h3 class="text-[24px]/[34px] font-manrope font-semibold text-dark-blue mb-[4px]">Angelina Rose</h3>
+                  <p class="text-[16px]/[26px] font-inter text-subtext">Traveller</p>
+                </div>
+                <ul class="flex gap-[3px]">
+                  <li><i class='bx  bxs-star text-[#FFA944] text-[14px]'></i></li>
+                  <li><i class='bx  bxs-star text-[#FFA944] text-[14px]'></i></li>
+                  <li><i class='bx  bxs-star text-[#FFA944] text-[14px]'></i></li>
+                  <li><i class='bx  bxs-star text-[#FFA944] text-[14px]'></i></li>
+                  <li><i class='bx  bxs-star text-[#FFA944] text-[14px]'></i></li>
+                </ul>
+              </div>
+              <p class="w-[490.34px] text-[20px]/[35px] font-medium font-inter text-text">
+                “Solar panels adorn the roof, harnessing renewable
+                energy to power the home and even feed excess
+                electricity back into the grid. High-performance
+                insulation and triple-glazed”
+              </p>
+            </div>
+            <div class="min-w-[696px] max-w-[696px] p-[40px] pb-[59.2px] bg-light-blue rounded-[24px] h-fit">
+              <div class="flex gap-[16px] mb-[20px]">
+                <figure class="w-[77px] h-[76px] rounded-full">
+                  <img src="./assets/images/testi_ava_2.png" alt="AVA" class="w-full h-full rounded-full">
+                </figure>
+                <div class="flex-1">
+                  <h3 class="text-[24px]/[34px] font-manrope font-semibold text-dark-blue mb-[4px]">Andrew Simon</h3>
+                  <p class="text-[16px]/[26px] font-inter text-subtext">Traveller</p>
+                </div>
+                <ul class="flex gap-[3px]">
+                  <li><i class='bx  bxs-star text-[#FFA944] text-[14px]'></i></li>
+                  <li><i class='bx  bxs-star text-[#FFA944] text-[14px]'></i></li>
+                  <li><i class='bx  bxs-star text-[#FFA944] text-[14px]'></i></li>
+                  <li><i class='bx  bxs-star text-[#FFA944] text-[14px]'></i></li>
+                  <li><i class='bx  bxs-star text-[#FFA944] text-[14px]'></i></li>
+                </ul>
+              </div>
+              <p class="w-[574px] text-[20px]/[35px] font-medium font-inter text-text">
+                “A home that perfectly blends sustainability with luxury until
+                discovered Ecoland Residence. The moment I stepped
+                community, I knew it was where I wanted to live.”
+              </p>
+            </div>
+            <div class="min-w-[616px] max-w-[616px] p-[40px] pb-[59.2px] bg-light-blue rounded-[24px] h-fit mt-[98px]">
+              <div class="flex gap-[16px] mb-[20px]">
+                <figure class="w-[77px] h-[76px] rounded-full">
+                  <img src="./assets/images/testi_ava_3.png" alt="AVA" class="w-full h-full rounded-full">
+                </figure>
+                <div class="flex-1">
+                  <h3 class="text-[24px]/[34px] font-manrope font-semibold text-dark-blue mb-[4px]">Maria Doe</h3>
+                  <p class="text-[16px]/[26px] font-inter text-subtext">Traveller</p>
+                </div>
+                <ul class="flex gap-[3px]">
+                  <li><i class='bx  bxs-star text-[#FFA944] text-[14px]'></i></li>
+                  <li><i class='bx  bxs-star text-[#FFA944] text-[14px]'></i></li>
+                  <li><i class='bx  bxs-star text-[#FFA944] text-[14px]'></i></li>
+                  <li><i class='bx  bxs-star text-[#FFA944] text-[14px]'></i></li>
+                  <li><i class='bx  bxs-star text-[#FFA944] text-[14px]'></i></li>
+                </ul>
+              </div>
+              <p class="w-[536.56px] text-[20px]/[35px] font-medium font-inter text-text">
+                “The home boasts sleek, contemporary architecture
+                with clean lines and expansive windows, allowing
+                natural light to flood the interiors It incorporates passive
+                design principles”
+              </p>
+            </div>
+          </div>
+        </div>
+        <ul class="flex items-center mx-auto justify-center mt-[75px] gap-[30px]">
+          <li
+            class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
+          </li>
+          <li
+            class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
+          </li>
+          <li
+            class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
+          </li>
+          <li
+            class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
+          </li>
+          <li
+            class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
+          </li>
+          <li
+            class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
+          </li>
+        </ul>
+      </div>
+
+      <ul class="w-[1776px] px-[25.5px] mx-auto flex items-center justify-between">
+        <li>
+          <img src="./assets/images/brand_1.png" alt="BRAND" class="w-[150px] h-[150px]">
+        </li>
+        <li>
+          <img src="./assets/images/brand_2.png" alt="BRAND" class="w-[150px] h-[150px]">
+        </li>
+        <li>
+          <img src="./assets/images/brand_3.png" alt="BRAND" class="w-[150px] h-[150px]">
+        </li>
+        <li>
+          <img src="./assets/images/brand_4.png" alt="BRAND" class="w-[150px] h-[150px]">
+        </li>
+        <li>
+          <img src="./assets/images/brand_3.png" alt="BRAND" class="w-[150px] h-[150px]">
+        </li>
+        <li>
+          <img src="./assets/images/brand_1.png" alt="BRAND" class="w-[150px] h-[150px]">
+        </li>
+        <li>
+          <img src="./assets/images/brand_5.png" alt="BRAND" class="w-[150px] h-[150px]">
+        </li>
+        <li>
+          <img src="./assets/images/brand_2.png" alt="BRAND" class="w-[150px] h-[150px]">
+        </li>
+      </ul>
+
+      <img src="./assets/icons/shape_plane_2.png" alt="SHAPE"
+        class="absolute top-[289.38px] left-[96px] w-[85px] h-[50px]">
+    </section>
+
+    <!-- News -->
+    <section class="pt-[120px] pb-[116px] bg-light-blue relative">
+      <div class="max-w-[1320px] w-full mx-auto">
+        <div class="flex items-end justify-between mb-[48.69px]">
+          <div>
+            <p class="font-montez text-[40px]/[40px] text-dark-blue">About Us Restaurant</p>
+            <h2 class="font-manrope font-bold text-[48px]/[63.7px] text-dark-blue">News & Articles From Tourm</h2>
+          </div>
+          <a href="javascript:void(0)"
+            class="flex items-center border-[1px] border-dark-blue rounded-[48px] py-[18px] px-[26px] text-[16px]/[26px] font-inter text-dark-blue hover:bg-blue hover:border-blue duration-200 hover:text-white">See
+            More Articles <img src="./assets/icons/arrow_right_dark.png" alt="ARROW"
+              class="w-[24px] h-[24px] ml-[7.69px]"></a>
+        </div>
+        <ul class="flex justify-between">
+          <li class="w-full max-w-[424px] h-fit">
+            <figure class="w-full h-[350.3px] rounded-[14px] mb-[32.2px]">
+              <img src="./assets/images/blog_1.jpg" alt="NEWS" class="w-full h-full rounded-[14px]">
+            </figure>
+            <p class="flex gap-[27px] text-subtext text-[14px]/[24px] font-inter mb-[10.33px]"><span
+                class="relative after:content-[''] after:absolute after:w-[1px] after:h-[10px] after:bg-subtext after:top-[50%] after:-translate-y-[50%] after:rounded-full after:right-[-15px]">Jul
+                10, 2024</span><span>3 Min Read</span></p>
+            <h3 class="text-[24px]/[34px] font-manrope font-semibold text-dark-blue mb-[31px]">
+              Enrich Your Mind Envision Your
+              Future Education for Success
+            </h3>
+            <a href="javascript:void(0)"
+              class="py-[10px] px-[24px] w-fit flex items-center border-[1px] border-dark-blue rounded-[48px] text-[16px]/[26px] font-inter text-dark-blue hover:bg-blue hover:border-blue duration-200 hover:text-white">Read
+              More <img src="./assets/icons/arrow_right_dark.png" alt="ARROW" class="w-[16px] h-[16px] ml-[7.67px]"></a>
+          </li>
+          <li class="w-full max-w-[424px] h-fit">
+            <figure class="w-full h-[350.3px] rounded-[14px] mb-[32.2px]">
+              <img src="./assets/images/blog_2.jpg" alt="NEWS" class="w-full h-full rounded-[14px]">
+            </figure>
+            <p class="flex gap-[27px] text-subtext text-[14px]/[24px] font-inter mb-[10.33px]"><span
+                class="relative after:content-[''] after:absolute after:w-[1px] after:h-[10px] after:bg-subtext after:top-[50%] after:-translate-y-[50%] after:rounded-full after:right-[-15px]">Jul
+                10, 2024</span><span>3 Min Read</span></p>
+            <h3 class="text-[24px]/[34px] font-manrope font-semibold text-dark-blue mb-[31px]">
+              Exploring The Green Spaces Of
+              Realar Residence Harmony with
+            </h3>
+            <a href="javascript:void(0)"
+              class="py-[10px] px-[26px] w-fit flex items-center border-[1px] border-dark-blue rounded-[48px] text-[16px]/[26px] font-inter text-dark-blue hover:bg-blue hover:border-blue duration-200 hover:text-white">Read
+              More <img src="./assets/icons/arrow_right_dark.png" alt="ARROW" class="w-[16px] h-[16px] ml-[7.67px]"></a>
+          </li>
+          <li class="w-full max-w-[424px] h-fit">
+            <figure class="w-full h-[350.3px] rounded-[14px] mb-[32.2px]">
+              <img src="./assets/images/blog_3.jpg" alt="NEWS" class="w-full h-full rounded-[14px]">
+            </figure>
+            <p class="flex gap-[27px] text-subtext text-[14px]/[24px] font-inter mb-[10.33px]"><span
+                class="relative after:content-[''] after:absolute after:w-[1px] after:h-[10px] after:bg-subtext after:top-[50%] after:-translate-y-[50%] after:rounded-full after:right-[-15px]">Jul
+                9, 2024</span><span>3 Min Read</span></p>
+            <h3 class="text-[24px]/[34px] font-manrope font-semibold text-dark-blue mb-[31px]">
+              Living sustainability: A day in the life
+              atrealar residence
+            </h3>
+            <a href="javascript:void(0)"
+              class="py-[10px] px-[26px] w-fit flex items-center border-[1px] border-dark-blue rounded-[48px] text-[16px]/[26px] font-inter text-dark-blue hover:bg-blue hover:border-blue duration-200 hover:text-white">Read
+              More <img src="./assets/icons/arrow_right_dark.png" alt="ARROW" class="w-[16px] h-[16px] ml-[7.67px]"></a>
+          </li>
+        </ul>
+      </div>
+
+      <img src="./assets/icons/shape_air_balloon.png" alt="SHAPE_PLAN"
+        class="absolute left-[38.39px] bottom-[47.56px] w-[56px] h-[78px]" />
+      <img src="./assets/icons/shape_air_balloon.png" alt="SHAPE_PLAN"
+        class="absolute left-[38.39px] bottom-[190.3px] w-[35px] h-[47px]" />
+      <img src="./assets/icons/shape_air_balloon.png" alt="SHAPE_PLAN"
+        class="absolute left-[134.39px] bottom-[115.05px] w-[15px] h-[21px]" />
+    </section>
+
+    <!-- Contact -->
+    <section class="pt-[120px]">
+      <div class="w-full max-w-[1320px] mx-auto flex items-center pb-[51px] border-b-[1px] border-[#E1E4E6]">
+        <div class="flex-1">
+          <h2 class="text-[40px]/[53.1px] text-dark-blue font-manrope font-semibold capitalize">get updated the latest
+            newsletter</h2>
+        </div>
+
+        <form action="javascript:void(0)" class="flex flex-1 gap-[17px] h-fit">
+          <input type="email" placeholder="Enter your Email"
+            class="flex-1 rounded-[48px] bg-transparent border-[1px] border-subtext text-subtext text-[14px]/[auto] font-inter px-[16px] py-[22.5px] outline-blue">
+          <button
+            class="flex items-center gap-[7.62px] text-[16px]/[26px] text-white font-inter bg-dark-blue rounded-[48px] px-[39.88px] py-[22px] hover:bg-blue duration-200 cursor-pointer">Subscribe
+            Now <img src="./assets/icons/send.png" alt="SEND" class="w-[24px] h-[25px] mr-[7.62px]"></button>
+        </form>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer></footer>
+  <footer
+    class="pt-[59.12px] relative">
+    <div class="w-full max-w-[1320px] mx-auto flex justify-between pb-[120px]">
+      <div class="w-[311px]">
+        <figure class="w-[197px] h-[56px] mb-[28px]">
+          <img src="./assets/images/logo_footer.png" alt="LOGO" class="w-full h-full">
+        </figure>
+        <p class="font-inter text-[16px]/[28px] text-[#666666] mb-[19px]">
+          Rapidiously myocardinate cross-platform
+          intellectual capital model. Appropriately
+          create interactive infrastructures
+        </p>
+        <ul class="flex gap-[10px] items-center">
+          <li class="w-[32px] h-[32px] rounded-full bg-light-blue flex items-center justify-center cursor-pointer"><i
+              class='bxl  bx-facebook text-blue text-[16px]/[16px]'></i></li>
+          <li class="w-[32px] h-[32px] rounded-full bg-light-blue flex items-center justify-center cursor-pointer"><i
+              class='bxl  bx-twitter text-blue text-[16px]/[16px]'></i></li>
+          <li class="w-[32px] h-[32px] rounded-full bg-light-blue flex items-center justify-center cursor-pointer"><i
+              class='bxl  bx-linkedin text-blue text-[16px]/[16px]'></i></li>
+          <li class="w-[32px] h-[32px] rounded-full bg-light-blue flex items-center justify-center cursor-pointer"><i
+              class='bxl  bx-whatsapp text-blue text-[16px]/[16px]'></i></li>
+          <li class="w-[32px] h-[32px] rounded-full bg-light-blue flex items-center justify-center cursor-pointer"><i
+              class='bxl  bx-instagram text-blue text-[16px]/[16px]'></i></li>
+      </div>
+      <div class="w-fit">
+        <h3 class="text-[24px]/[24px] text-dark-blue font-semibold font-manrope mb-[26px]">Quick Links</h3>
+        <ul class="flex flex-col gap-[21px]">
+          <li><a href="javascript:void(0)" class="text-[#888C97] text-[16px]/[21px] flex items-center font-inter"><i
+                class='bx  bx-chevron-right text-[14.4px]/[18.9px]'></i>Home</a></li>
+          <li><a href="javascript:void(0)" class="text-[#888C97] text-[16px]/[21px] flex items-center font-inter"><i
+                class='bx  bx-chevron-right text-[14.4px]/[18.9px]'></i>About US</a></li>
+          <li><a href="javascript:void(0)" class="text-[#888C97] text-[16px]/[21px] flex items-center font-inter"><i
+                class='bx  bx-chevron-right text-[14.4px]/[18.9px]'></i>Services</a></li>
+          <li><a href="javascript:void(0)" class="text-[#888C97] text-[16px]/[21px] flex items-center font-inter"><i
+                class='bx  bx-chevron-right text-[14.4px]/[18.9px]'></i>Tour Guide</a></li>
+          <li><a href="javascript:void(0)" class="text-[#888C97] text-[16px]/[21px] flex items-center font-inter"><i
+                class='bx  bx-chevron-right text-[14.4px]/[18.9px]'></i>Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="w-fit">
+        <h3 class="text-[24px]/[24px] text-dark-blue font-semibold font-manrope mb-[26px]">Get In Touch</h3>
+        <ul class="flex flex-col gap-[12px] w-[260px]">
+          <li class="flex items-center gap-[16px]">
+            <p class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-light-blue text-blue">
+              <i class='bx  bx-phone-ring text-[18px]/[18px] text-blue'></i>
+            </p>
+            <div class="font-inter">
+              <p class="text-subtext text-[16px]/[28px] flex items-center font-inter">+01 234 567 890</p>
+              <p class="text-subtext text-[16px]/[28px] flex items-center font-inter"></i>+09 999 999 999</p>
+            </div>
+          </li>
+          <li class="flex items-center gap-[16px]">
+            <p class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-light-blue text-blue">
+              <i class='bx  bx-envelope text-[18px]/[18px] text-blue'></i>
+            </p>
+            <div class="font-inter">
+              <p class="text-subtext text-[16px]/[28px] flex items-center font-inter">mailinfo00@tours.com</p>
+              <p class="text-subtext text-[16px]/[28px] flex items-center font-inter"></i>support24@tours.com</p>
+            </div>
+          </li>
+          <li class="flex items-center gap-[16px]">
+            <p class="min-w-[40px] h-[40px] rounded-full flex items-center justify-center bg-light-blue text-blue">
+              <i class='bx  bx-location-alt text-[18px]/[18px] text-blue'></i>
+            </p>
+            <div class="font-inter">
+              <p class="text-subtext text-[16px]/[28px] flex items-center font-inter">789 Inner Lane, Holy park,
+                California, USA</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="w-fit">
+        <h3 class="text-[24px]/[24px] text-dark-blue font-semibold font-manrope mb-[26px]">Instagram Post</h3>
+        <div class="grid grid-cols-3 grid-rows-2 gap-[12px]">
+          <figure class="w-[96px] h-[96px] rounded-[4px]"><img src="./assets/images/gallery_ft_1.jpg" alt="GALLERY"
+              class="w-full h-full rounded-[4px]"></figure>
+          <figure class="w-[96px] h-[96px] rounded-[4px]"><img src="./assets/images/gallery_ft_2.jpg" alt="GALLERY"
+              class="w-full h-full rounded-[4px]"></figure>
+          <figure class="w-[96px] h-[96px] rounded-[4px]"><img src="./assets/images/gallery_ft_3.jpg" alt="GALLERY"
+              class="w-full h-full rounded-[4px]"></figure>
+          <figure class="w-[96px] h-[96px] rounded-[4px]"><img src="./assets/images/gallery_ft_4.jpg" alt="GALLERY"
+              class="w-full h-full rounded-[4px]"></figure>
+          <figure class="w-[96px] h-[96px] rounded-[4px]"><img src="./assets/images/gallery_ft_5.jpg" alt="GALLERY"
+              class="w-full h-full rounded-[4px]"></figure>
+          <figure class="w-[96px] h-[96px] rounded-[4px]"><img src="./assets/images/gallery_ft_6.jpg" alt="GALLERY"
+              class="w-full h-full rounded-[4px]"></figure>
+        </div>
+      </div>
+
+    </div>
+    <div class="w-full h-[67px] bg-[url('./assets/images/footer_bar.png')] bg-cover bg-no-repeat">
+      <div class="w-full max-w-[1320px] mx-auto h-full flex items-center justify-between">
+        <p class="text-[14px]/[24.5px] text-white font-inter">Copyright 2025 Tours . All Rights Reserved.</p>
+        <div class="flex items-center gap-[20.17px]">
+          <p class="text-white text-[16px]/[24px] font-inter">We Accept</p>
+          <figure class="w-[224px] h-[32px]">
+            <img src="./assets/images/cards.png.png" alt="VISA" class="w-full h-full">
+          </figure>
+        </div>
+      </div>
+    </div>
+    <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      class="absolute bottom-[30px] right-[30px] w-[50px] h-[50px] bg-[url('./assets/images/scroll.png')] bg-contain bg-no-repeat cursor-pointer">
+    </button>
+  </footer>
 
   <!-- Swiper CDN -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".heroSwiper", {
-      direction: "vertical",
-      allowTouchMove: false,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '"></span>';
-        },
-      },
-      navigation: {
-        nextEl: ".custom-next",
-        prevEl: ".custom-prev",
-      },
-      loop: true,
-    });
-
-    var swiper = new Swiper(".popularSwiper", {
-      effect: 'coverflow',
-      grabCursor: true,
-      // centeredSlides: true,
-      slidesPerView: 5,
-      loop: true,
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 100,
-        modifier: 2.5,
-      },
-    });
-
-    var swiper = new Swiper(".recommendSwiper", {
-      slidesPerView: 4,
-      spaceBetween: 24,
-      pagination: {
-        el: ".custom-pagination-recommend",
-        clickable: true,
-        renderBullet: function (index, className) {
-          return `<li class="${className} bullet_recommend" style="margin: 0;"></li>`;
-        },
-      },
-    });
-
-    var swiper = new Swiper(".tourSwiper", {
-      slidesPerView: 4,
-      spaceBetween: 24,
-      pagination: {
-        el: ".custom-pagination-tour",
-        clickable: true,
-        renderBullet: function (index, className) {
-          return `<li class="${className} bullet_tour" style="margin: 0;"></li>`;
-        },
-      },
-    });
-
-    // var swiper = new Swiper(".testimonialSwiper", {
-    //   slidesPerView: 3,
-    //   spaceBetween: 30,
-    //   pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    //   },
-    // });
-  </script>
-  <script src="./data/data.js"></script>
+  <script src="./JS/swiper.js"></script>
+  <script src="./JS/data.js"></script>
 </body>
 
 </html>

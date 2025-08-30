@@ -12,7 +12,6 @@
   opacity: 1;
 }
 
-
 .bullet_recommend,
 .bullet_tour {
   margin: 0;
@@ -21,8 +20,14 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: transparent;
-  border: 1px solid #0A2A66;
+  background-color: transparent !important;
+  border: 1px solid #113d48 !important;
   cursor: pointer;
   transition: all 0.1s ease;
+}
+
+.bullet_recommend.swiper-pagination-bullet-active,
+.bullet_tour.swiper-pagination-bullet-active {
+  background-color: #1ca8cb !important;
+  border-color: #1ca8cb !important;
 }

@@ -3,8 +3,9 @@
 - [✅] A1: Layout Implementation. UI Framework: HTML, TailwindCSS, SwiperJS (Carousel, slide), Boxicons (Icons)
   - [✅] Use the exact font designed in figma
   - [✅] Use the exact colors and spacing designed in figma
-  - [✅] Pixel perfect implementation     *(Note: only required for 1920px screen size since the design was made for that resolution)*
-  - [✅] Handle interactive states (carousel, hover, etc.)    *(Note: all sections include hover effects and carousel slides except "Tour Categories", which has no carousel due to lack of a suitable solution)*
+  - [✅] Pixel perfect implementation     
+  - [✅] Handle interactive states (carousel, hover, etc.)
+*Note A1: Please refer to `./A1/NOTES.md` for detailed information about the implementation.*
 
 - [ ] A2: Multi-Step Form with Live PDF Preview. Libaries used: ______________________
   - [ ] Implement a multi-step form with at least 3 steps.

@@ -12,6 +12,7 @@
 - Manrope
 - Inter
 
+# Notes - A1: Layout Implementation
 ## What I Have Completed
 - Implemented layout with **HTML, TailwindCSS, SwiperJS, Boxicons**.
 - Used the **exact fonts, font sizes, colors, and spacings** from the Figma design.

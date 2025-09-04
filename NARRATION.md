@@ -5,7 +5,7 @@
   - [✅] Use the exact colors and spacing designed in figma
   - [✅] Pixel perfect implementation     
   - [✅] Handle interactive states (carousel, hover, etc.)
-*Note A1: Please refer to `./A1/NOTES.md` for detailed information about the implementation.*
+*Note A1: Please refer to `./A1/NOTES.md`*
 
 - [ ] A2: Multi-Step Form with Live PDF Preview. Libaries used: ______________________
   - [ ] Implement a multi-step form with at least 3 steps.
@@ -17,11 +17,12 @@
   - [ ] Show progress bar of the whole process.
   - [ ] Validate the form data before submitting.
 
-- [ ] A3: Map & Location List Synchronization. Libraries used: ____________________
-  - [ ] Display the list of locations in a list view and all locations must be marked on the map.
-  - [ ] Allow user to sort the list of locations by rating.
-  - [ ] Allow user to search the list of locations by name or address.
-  - [ ] Allow user to select a location from the list and the map will be synchronized with the selected location (fly to the selected location).
-  - [ ] Hightlight both the list and the map marker of the selected location.
-  - [ ] Show a popup/tooltip with location details when clicking the marker.
+- [✅] A3: Map & Location List Synchronization. Libraries used: ReactJS, TailwindCSS, @react-google-maps/api, Shadcn UI
+  - [✅] Display the list of locations in a list view and all locations must be marked on the map.
+  - [✅] Allow user to sort the list of locations by rating.
+  - [✅] Allow user to search the list of locations by name or address.
+  - [✅] Allow user to select a location from the list and the map will be synchronized with the selected location (fly to the selected location).
+  - [✅] Hightlight both the list and the map marker of the selected location.
+  - [✅] Show a popup/tooltip with location details when clicking the marker.
   - [ ] Optimize the locations list for large dataset.
+*Note A1: Please refer to  `./A3/NOTES.md`*

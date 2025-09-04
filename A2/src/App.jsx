@@ -1,12 +1,10 @@
-import { Button } from "@/components/ui/button";
+import MultiStepForm from "./components/form/MultiStepForm";
 
 function App() {
   return (
     <>
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
-      <div className="flex min-h-svh flex-col items-center justify-center">
-        <Button variant="ghost">Click me</Button>
-      </div>
+      <h1 className="text-3xl font-bold text-center mt-4">Multi Step Form</h1>
+      <MultiStepForm />
     </>
   );
 }

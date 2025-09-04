@@ -1,15 +1,20 @@
-<!-- # React + Vite
+# Notes: A2 - Multi-Step Form with Live PDF Preview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## What I Have Completed
 
-Currently, two official plugins are available:
+- Implemented a **multi-step form** with **at least 3 steps** using **ReactJS, Redux, TailwindCSS, Shadcn UI, react-hook-form, zod, @react-pdf/renderer**.
+- Each step has its own form, and users can **navigate forward and backward** while preserving all previously entered data.
+- Added **form validation** with Zod for each step; the **Continue/Submit button is disabled** until all required fields are filled.
+- Implemented a **reset button** that clears all form data and returns the user to Step 1.
+- Integrated **live PDF preview** using `@react-pdf/renderer`
+- Added a **progress bar** that visually shows the user’s progress through the multi-step form.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## What I Could Not Complete (Due to Limited Time)
 
-## Expanding the ESLint configuration
+- **Responsive design refinements**:
+  - Form layout works well on desktop but needs further adjustment for smaller screens (tablet/mobile).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project. -->
+## Future Improvements (If I Had More Time)
 
-
-
+- Make the form **fully responsive** and mobile-friendly.
+- Enhance PDF layout with **better styling** and formatting.

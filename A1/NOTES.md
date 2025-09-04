@@ -7,13 +7,16 @@
 - **Text**: `#0D0D0C` → `hsl(60, 6%, 5%)`
 - **Subtext**: `#6E7070` → `hsl(180, 1%, 44%)`
 - **Border Line**: `#999999` → `hsl(0, 0%, 60%)`
+
 ## Fonts
-- Montez 
+- Montez
 - Manrope
 - Inter
 
+
 # Notes - A1: Layout Implementation
 ## What I Have Completed
+
 - Implemented layout with **HTML, TailwindCSS, SwiperJS, Boxicons**.
 - Used the **exact fonts, font sizes, colors, and spacings** from the Figma design.
 - Achieved **pixel-perfect implementation** at **1920px screen width** (same as the design).
@@ -22,15 +25,18 @@
   - Carousel/slider implemented in most sections using SwiperJS.
 
 ## What I Could Not Complete (Due to Limited Time)
+
 - **Responsive design**:
+
   - The layout is pixel-perfect at 1920px but not fully responsive across other screen sizes.
 
-- **Carousel in some sections**:  
-  - *Tour Categories* and *What Clients Say About Us* do not have a working carousel.
+- **Carousel in some sections**:
+  - _Tour Categories_ and _What Clients Say About Us_ do not have a working carousel.
   - More time is needed to customize SwiperJS for these layouts.
   - Carousels were implemented successfully in the other sections.
 
 ## Future Improvements (If I Had More Time)
+
 - Make the entire layout fully responsive for different screen sizes.
-- Complete the missing carousels (*Tour Categories* and *What Clients Say About Us*).
+- Complete the missing carousels (_Tour Categories_ and _What Clients Say About Us_).
 - Optimize code structure and reusability for easier maintenance.

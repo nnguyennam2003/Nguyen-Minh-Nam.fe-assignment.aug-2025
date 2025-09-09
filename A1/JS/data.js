@@ -186,3 +186,21 @@ tourWrapper.innerHTML = guides
   `
   )
   .join("");
+
+const dotClass =
+  "w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100";
+
+const testiPagination = document.getElementById("testiPagination");
+const categoryPagination = document.getElementById("categoryPagination")
+
+Array.from({ length: 5 }).map(() => {
+  const li = document.createElement("li");
+  li.className = dotClass;
+  testiPagination.appendChild(li);
+});
+
+Array.from({ length: 5 }).map(() => {
+  const li = document.createElement("li");
+  li.className = dotClass;
+  categoryPagination.appendChild(li);
+});

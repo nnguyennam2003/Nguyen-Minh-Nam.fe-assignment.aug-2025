@@ -292,23 +292,7 @@
           </div>
         </li>
       </ul>
-      <ul class="flex items-center mx-auto justify-center mt-[46.68px] gap-[30px]">
-        <li
-          class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
-        </li>
-        <li
-          class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
-        </li>
-        <li
-          class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
-        </li>
-        <li
-          class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
-        </li>
-        <li
-          class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
-        </li>
-      </ul>
+      <ul id="categoryPagination" class="flex items-center mx-auto justify-center mt-[46.68px] gap-[30px]"></ul>
     </section>
 
     <!-- Popular -->
@@ -387,7 +371,8 @@
     </section>
 
     <!-- Plan Your Trip  -->
-    <section class="w-full relative z-10 pb-[117.12px] before:content-[''] before:z-0 before:absolute before:w-[396px] before:h-[396px] before:bg-[#E9F6F9] before:rounded-full before:right-[76.58px] before:bottom-[92.94px] after:content-[''] after:bg-[url('./assets/images/plan_man.png')] after:bg-cover after:bg-center after:z-10 after:absolute after:w-[217px] after:h-[546px] after:bottom-0 after:right-[153.59px]">
+    <section
+      class="w-full relative z-10 pb-[117.12px] before:content-[''] before:z-0 before:absolute before:w-[396px] before:h-[396px] before:bg-[#E9F6F9] before:rounded-full before:right-[76.58px] before:bottom-[92.94px] after:content-[''] after:bg-[url('./assets/images/plan_man.png')] after:bg-cover after:bg-center after:z-10 after:absolute after:w-[217px] after:h-[546px] after:bottom-0 after:right-[153.59px]">
       <div class="max-w-[1322px] w-full mx-auto flex gap-[56px]">
         <div class="flex gap-[24px]">
           <figure class="min-w-[312px] flex-1 h-[630px]">
@@ -481,7 +466,8 @@
     </section>
 
     <!-- Gallery -->
-    <section class="relative before:absolute before:content-[''] before:w-[177px] before:h-[111px] before:bg-[url('./assets/images/shape_coconut.png')] before:bg-cover before:bg-center before:bottom-0 before:left-[57.59px] before:z-10 after:absolute after:content-[''] after:w-[52px] after:h-[60px] after:bg-[url('./assets/images/shape_anchor.png')] after:bg-cover after:bg-center after:bottom-[640.16px] after:right-[96px] after:z-10">
+    <section
+      class="relative before:absolute before:content-[''] before:w-[177px] before:h-[111px] before:bg-[url('./assets/images/shape_coconut.png')] before:bg-cover before:bg-center before:bottom-0 before:left-[57.59px] before:z-10 after:absolute after:content-[''] after:w-[52px] after:h-[60px] after:bg-[url('./assets/images/shape_anchor.png')] after:bg-cover after:bg-center after:bottom-[640.16px] after:right-[96px] after:z-10">
       <div
         class="bg-[url('./assets/images/bg_gallery.png')] bg-cover bg-position-[100%_60%] mb-[146px] relative before:absolute before:content-[''] before:w-[85px] before:h-[52px] before:bg-[url('./assets/images/shape_plane.png')] before:bg-cover before:bg-center before:top-[181.15px] before:left-[55.68px] before:z-10">
         <div class="text-center">
@@ -666,26 +652,7 @@
             </div>
           </div>
         </div>
-        <ul class="flex items-center mx-auto justify-center mt-[75px] gap-[30px]">
-          <li
-            class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
-          </li>
-          <li
-            class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
-          </li>
-          <li
-            class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
-          </li>
-          <li
-            class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
-          </li>
-          <li
-            class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
-          </li>
-          <li
-            class="w-[16px] h-[16px] rounded-full bg-transparent border-[1px] border-dark-blue hover:bg-blue hover:border-blue cursor-pointer duration-100">
-          </li>
-        </ul>
+        <ul class="flex items-center mx-auto justify-center mt-[75px] gap-[30px]" id="testiPagination"></ul>
       </div>
 
       <ul class="w-[1776px] px-[25.5px] mx-auto flex items-center justify-between">
@@ -809,8 +776,7 @@
   </main>
 
   <!-- Footer -->
-  <footer
-    class="pt-[59.12px] relative">
+  <footer class="pt-[59.12px] relative">
     <div class="w-full max-w-[1320px] mx-auto flex justify-between pb-[120px]">
       <div class="w-[311px]">
         <figure class="w-[197px] h-[56px] mb-[28px]">
